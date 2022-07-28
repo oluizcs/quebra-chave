@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    user-select: none;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#content {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#chave {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#chavenf {
+    width: 24rem;
+}
+
+#chavequebrada {
+    display: flex;
+    margin: 0 0 20px 0;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#uf {
+    width: 30px;
+}
+
+#emissao {
+    width: 45px;
+}
+
+#cnpj {
+    width: 130px;
+}
+
+#modelo {
+    width: 30px;
+}
+
+#serie {
+    width: 35px;
+}
+
+#numero {
+    width: 85px;
+}
+
+#fe {
+    width: 20px;
+}
+
+#cod-numerico {
+    width: 78px;
+}
+
+#dv {
+    width: 20px;
+}
+
+span {
+    margin: 0 0 5px 0;
+}
+
+input {
+    font-size: 15px;
+    text-align: center;
+    margin: 0 4px 0 4px;
+    padding: 5px;
+    border-radius: 5px;
+    outline: 2px solid #000;
+}
+
+.buttons {
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
+}
+
+button {
+    background-color: #d4d4d4;
+    width: 100px;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #868686;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+#msg {
+    display: none;
+    background-color: #6ceb60;
+    color: #000000;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 5px;
+    animation: shake 300ms;
+}
+
+@keyframes shake {
+    25% {
+        transform: translateX(5px);
+    }
+
+    50% {
+        transform: translateX(-4px);
+    }
+
+    75% {
+        transform: translateX(4px);
+    }
+}
+
+footer {
+    bottom: 10px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Chave NF-e / NFC-e</title>
+</head>
+
+<body>
+    <header>
+        <h1>Editar Chave NF-e / NFC-e</h1>
+    </header>
+    <section>
+        <div id="content">
+            <div id="chave">
+                <span>Chave:</span>
+                <input type="text" id="chavenf" autocomplete="off" maxlength="44">
+            </div><br />
+            <div id="chavequebrada">
+                <div class="campo">
+                    <span>UF</span>
+                    <input id="uf" type="text" autocomplete="off" maxlength="2">
+                </div>
+                <div class="campo">
+                    <span>Emissão</span>
+                    <input id="emissao" type="text" autocomplete="off" maxlength="4">
+                </div>
+                <div class="campo">
+                    <span>CNPJ</span>
+                    <input id="cnpj" type="text" autocomplete="off" maxlength="14">
+                </div>
+                <div class="campo">
+                    <span>Mod</span>
+                    <input id="modelo" type="text" autocomplete="off" maxlength="2">
+                </div>
+                <div class="campo">
+                    <span>Série</span>
+                    <input id="serie" type="text" autocomplete="off" maxlength="3">
+                </div>
+                <div class="campo">
+                    <span>Número NF</span>
+                    <input id="numero" type="text" autocomplete="off" maxlength="9">
+                </div>
+                <div class="campo">
+                    <span>FE</span>
+                    <input id="fe" type="text" autocomplete="off" maxlength="1">
+                </div>
+                <div class="campo">
+                    <span>Cód. Numérico</span>
+                    <input id="cod-numerico" type="text" autocomplete="off" maxlength="8">
+                </div>
+                <div class="campo">
+                    <span>DV</span>
+                    <input id="dv" type="text" autocomplete="off" maxlength="1">
+                </div>
+            </div>
+            <div class="buttons">
+                <button onclick="quebraChave()">Quebrar Chave</button>
+                <button onclick="montaChave()">Montar Chave</button>
+                <button onclick="copiaChave()">Copiar Chave</button>
+                <button onclick="limpaTela()">Limpar</button>
+            </div><br/><br/>
+            <div id="msg">
+                <span>Chave copiada para a Área de Transferência!</span>
+            </div>
+        </div>
+    </section>
+    <footer><span>Desenvolvido por <a href="https://github.com/oluizcs" target="__blank">@oluizcs</a></span></footer>
+</body>
+
+</html>
