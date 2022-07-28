@@ -1,14 +1,4 @@
-let chave;
-let chaveQuebrada;
-let uf;
-let emissao;
-let cnpj;
-let modelo;
-let serie;
-let numero;
-let fe;
-let codNumerico;
-let dv;
+let chave, chaveQuebrada, uf, emissao, cnpj, modelo, serie, numero, fe, codNumerico, dv;
 
 function quebraChave() {
     chave = document.getElementById('chavenf').value;
@@ -16,15 +6,15 @@ function quebraChave() {
         return;
     }
     chaveQuebrada = chave.split('')
-    let uf = chaveQuebrada.slice(0, 2).join('');
-    let emissao = chaveQuebrada.slice(2, 6).join('');
-    let cnpj = chaveQuebrada.slice(6, 20).join('');
-    let modelo = chaveQuebrada.slice(20, 22).join('');
-    let serie = chaveQuebrada.slice(22, 25).join('');
-    let numero = chaveQuebrada.slice(25, 34).join('');
-    let fe = chaveQuebrada.slice(34, 35).join('');
-    let codNumerico = chaveQuebrada.slice(35, 43).join('');
-    let dv = chaveQuebrada.slice(43, 44).join('');
+    uf = chaveQuebrada.slice(0, 2).join('');
+    emissao = chaveQuebrada.slice(2, 6).join('');
+    cnpj = chaveQuebrada.slice(6, 20).join('');
+    modelo = chaveQuebrada.slice(20, 22).join('');
+    serie = chaveQuebrada.slice(22, 25).join('');
+    numero = chaveQuebrada.slice(25, 34).join('');
+    fe = chaveQuebrada.slice(34, 35).join('');
+    codNumerico = chaveQuebrada.slice(35, 43).join('');
+    dv = chaveQuebrada.slice(43, 44).join('');
     document.getElementById('uf').value = uf;
     document.getElementById('emissao').value = emissao;
     document.getElementById('cnpj').value = cnpj;
